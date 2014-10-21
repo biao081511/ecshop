@@ -621,7 +621,7 @@ function do_others($system_lang, $captcha, $goods_types, $install_demo, $integra
         }
     }
 
-    include(ROOT_PATH . 'data/config.php');
+    include_once(ROOT_PATH . 'data/config.php');
     include_once(ROOT_PATH . 'includes/cls_mysql.php');
     $db = new cls_mysql($db_host, $db_user, $db_pass, $db_name);
 
